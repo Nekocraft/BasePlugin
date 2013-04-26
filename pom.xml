@@ -2,10 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uk.co.jacekk.bukkit</groupId>
 	<artifactId>baseplugin</artifactId>
-	<version>9.1</version>
-	<packaging>jar</packaging>
-	
+	<version>10.1</version>
 	<name>BasePlugin</name>
+	<packaging>jar</packaging>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -13,7 +12,6 @@
 	
 	<repositories>
 		<repository>
-			<name>Bukkit</name>
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public/</url>
 		</repository>
@@ -23,7 +21,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>1.5-R0.1-SNAPSHOT</version>
+			<version>1.5.1-R0.2</version>
 			<scope>compile</scope>
 		</dependency>
 		
@@ -38,7 +36,7 @@
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<directory>${basedir}/target</directory>
-		<finalName>${project.artifactId}-${project.version}</finalName>
+		<finalName>${project.name}</finalName>
 		
 		<plugins>
 			<plugin>
